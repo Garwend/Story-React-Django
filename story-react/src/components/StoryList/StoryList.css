@@ -1,0 +1,13 @@
+.stories {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+}
+
+@media (min-width: 1000px) {
+    .stories {
+        width: 50%;
+    }
+
+}

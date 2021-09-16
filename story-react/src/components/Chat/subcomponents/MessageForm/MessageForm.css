@@ -1,0 +1,90 @@
+.message-form-wrap {
+    height: 15%;
+}
+
+.w-messages-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 40%;
+    padding: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+    background-color: var(--background-color);
+    overflow: auto;
+}
+
+.w-message-type-talk,
+.w-message-type-action {
+    height: 100%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    color: var(--font-color-variant);
+    cursor: pointer;
+}
+
+.w-message-type-talk {
+    border: 2px solid var(--primary-color);
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.w-message-type-action {
+    border: 2px solid var(--secondary-color);
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.message-form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+}
+
+.message-form>input[type='text'] {
+    width: 75%;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 25px;
+    outline: none;
+    border: 2px solid var(--primary-color);
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.message-type {
+    cursor: pointer;
+    user-select: none;
+}
+
+.send-message-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+@media (max-width:999px) and (orientation: landscape) {
+    .message-form-wrap {
+        height: 30%;
+    }
+}
+
+@media(min-width:1000px) {
+    .w-messages-wrap {
+        width: calc(100vw - 350px);
+    }
+
+    .message-form>input[type='text'] {
+        width: 90%;
+        font-size: 24px;
+    }
+}

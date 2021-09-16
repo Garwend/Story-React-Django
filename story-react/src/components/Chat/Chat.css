@@ -1,0 +1,119 @@
+.story-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+    padding: 5px 5px 5px 20px;
+    background-color: var(--surface-color);
+    color: var(--font-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.story-title {
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.story-header>button {
+    background-color: transparent;
+    border: none;
+    margin: 0px 10px;
+}
+
+.story-header>.story-info-btn {
+    position: absolute;
+    top: 50%;
+    right: 105px;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+.story-header>.story-info-btn>.material-icons {
+    font-size: 31px;
+}
+
+.story-header>.button-style {
+    position: absolute;
+    top: 50%;
+    right: 46px;
+    transform: translateY(-50%);
+    background-color: rgb(230, 0, 42);
+}
+
+.story-header>.show-story-info-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--font-color);
+}
+
+.story-plot-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 5px;
+}
+
+.story-plot-btn-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50px;
+}
+
+.leave-or-delete-story-wrap {
+    height: 150px;
+}
+
+.leave-or-delete-story-wrap>p {
+    height: 75%;
+    font-weight: bold;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.leave-or-delete-story-wrap>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+}
+
+@media(min-width:1000px) {
+    .story-header {
+        width: 100%;
+    }
+
+    .story-header>.story-info-btn {
+        right: 100px;
+    }
+
+    .story-header>.button-style {
+        right: 10px;
+    }
+
+    .show-story-info-button {
+        display: none;
+    }
+
+    .story-title {
+        width: 75%;
+        font-size: 30px;
+    }
+
+    .story-plot-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        height: 500px;
+        padding: 0px;
+    }
+}

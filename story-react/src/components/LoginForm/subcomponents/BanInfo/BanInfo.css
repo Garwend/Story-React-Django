@@ -1,0 +1,28 @@
+.ban-info-wrap {
+    padding: 10px;
+    text-align: center;
+}
+
+.ban-info-wrap>h1,
+.ban-info-wrap>p {
+    margin-bottom: 15px;
+}
+
+.ban-info-wrap>p {
+    color: var(--font-color-variant);
+}
+
+.ban-info-wrap>p>span {
+    font-weight: bold;
+}
+
+
+.ban-info-wrap>button {
+    width: 40%;
+}
+
+@media (min-width: 1000px) {
+    .ban-info-wrap {
+        width: 350px;
+    }
+}

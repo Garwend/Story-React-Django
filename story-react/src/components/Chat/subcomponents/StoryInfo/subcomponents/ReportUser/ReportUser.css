@@ -1,0 +1,27 @@
+.report-user-form {
+    padding: 10px;
+}
+
+.report-user-form>h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.submit-or-cancel-wrap {
+    height: 15%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-or-cancel-wrap>button {
+    flex-grow: 1;
+}
+
+@media (min-width: 1000px) {
+    .report-user-form {
+        width: 350px;
+        padding: 0px;
+    }
+}

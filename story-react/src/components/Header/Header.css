@@ -1,0 +1,77 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: var(--surface-color);
+    border-bottom: 2px solid var(--border-color);
+    z-index: 999;
+}
+
+.main-header>nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.header-menu-button {
+    padding: 3px 6px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--font-color);
+    background-color: transparent;
+    transition: .3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu-button:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-color-variant-lighter);
+}
+
+.header-menu-button * {
+    pointer-events: none;
+}
+
+.header-menu-button>img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-menu {
+    position: absolute;
+    top: 45px;
+    right: 50%;
+    width: 180px;
+    padding: 4px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--surface-color);
+    color: var(--font-color);
+}
+
+.header-menu li {
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header-menu li:hover {
+    color: var(--primary-color);
+}

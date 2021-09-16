@@ -1,0 +1,30 @@
+.error-snackbar {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--error-color);
+    border-radius: 5px;
+}
+
+.error-snackbar>p {
+    font-weight: bold;
+    color: white;
+}
+
+.close-error-snackbar-btn {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+.close-error-snackbar-btn>span {
+    color: white;
+    font-size: 30px;
+}

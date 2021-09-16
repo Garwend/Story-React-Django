@@ -1,0 +1,21 @@
+.delete-character-wrap {
+    padding: 10px;
+    color: var(--font-color);
+}
+
+.delete-character-or-cancel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.delete-character-or-cancel>button {
+    flex-grow: 1;
+}
+
+@media(min-width: 1000px) {
+    .delete-character-wrap {
+        width: 240px;
+        padding: 0px;
+    }
+}

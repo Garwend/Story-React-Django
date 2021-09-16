@@ -1,0 +1,134 @@
+.stories-found-wrap {
+    position: relative;
+    height: 100vh;
+    padding: 8px;
+}
+
+.stories-found-search {
+    width: 85%;
+    padding: 8px 10px;
+    border: 2px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border-radius: 25px;
+    font-size: 18px;
+    outline: none;
+}
+
+.stories-found {
+    height: 90%;
+    overflow: auto;
+}
+
+.story-found {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 4px;
+    border: 2px solid var(--border-color);
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-weight: 700;
+    user-select: none;
+}
+
+.story-found-title {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--font-color);
+}
+
+.story-found-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.story-found-info>p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+.story-found-info .material-icons {
+    color: var(--primary-color);
+}
+
+.story-found-number-of-users {
+    color: var(--font-color-variant);
+}
+
+.story-found-info-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 6px;
+}
+
+.story-found-info-wrap>header {
+    height: 50px;
+    text-align: center;
+}
+
+.story-found-button-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-stories-found {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: transparent;
+    color: var(--font-color);
+    font-size: 30px;
+}
+
+.close-stories-found>.material-icons {
+    font-size: 40px;
+}
+
+.reconnect-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3px 0;
+    background-color: rgb(61, 173, 61);
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .stories-found-wrap {
+        width: 800px;
+        height: 500px;
+        padding: 0px;
+    }
+
+    .stories-found-search {
+        width: 100%;
+    }
+
+
+    .story-found-info-wrap {
+        width: 600px;
+        height: 500px;
+        padding: 0px;
+    }
+
+
+    .close-stories-found {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        color: white;
+    }
+
+}

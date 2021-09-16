@@ -1,0 +1,36 @@
+.dark-mode-button-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dark-mode-button-wrap * {
+    user-select: none;
+    pointer-events: none;
+}
+
+.switch-wrap {
+    position: relative;
+    width: 50px;
+    height: 26px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    transition: .3s;
+}
+
+.switch-dot {
+    width: 22px;
+    height: 22px;
+    background-color: var(--surface-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+
+#dark-mode:checked+.switch-dot {
+    left: 19px;
+}

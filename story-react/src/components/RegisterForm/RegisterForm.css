@@ -1,0 +1,92 @@
+.register-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--surface-color);
+}
+
+.register-form>.form-input-wrap {
+    margin-bottom: 20px;
+}
+
+.form-gender-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-gender-wrap>label {
+    flex-grow: 0.45;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--font-color);
+    user-select: none;
+    cursor: pointer;
+}
+
+.register-form-bottom-part {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 0px 0px 20px 20px;
+    background-color: var(--surface-color);
+    text-align: center;
+}
+
+.register-form-bottom-part>a {
+    margin-left: 5px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.register-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-spinner-loader {
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 2s linear infinite;
+}
+
+.register-info {
+    text-align: center;
+    color: var(--font-color-variant);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media(min-width: 1000px) {
+    .register-form {
+        width: 350px;
+    }
+}

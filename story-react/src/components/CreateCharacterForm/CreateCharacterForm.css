@@ -1,0 +1,67 @@
+.create-character-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 10px;
+}
+
+.create-character-image-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-character-image-preview {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.delete-character-image-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-color);
+    color: var(--font-color);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.validation-error {
+    margin-top: 2px;
+    color: rgb(230, 0, 42);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.input-info {
+    margin-top: 2px;
+    color: var(--font-color-variant);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.create-character-or-cancel {
+    display: flex;
+    flex-direction: row;
+}
+
+.create-character-or-cancel>button {
+    flex-grow: 1;
+}
+
+@media(min-width: 1000px) {
+    .create-character-form {
+        height: 650px;
+        width: 500px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,126 @@
+.story-info-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: var(--surface-color);
+    color: var(--font-color);
+    border-left: 1px solid var(--border-color);
+    overflow: auto;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.users-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 0px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.users-in-story-list>li,
+.characters-in-story-list>li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.characters-in-story-list>li {
+    justify-content: space-between;
+}
+
+.characters-in-story-list>li>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.characters-in-story-list>li>.character-info-btn {
+    border: none;
+    color: var(--primary-color);
+    background-color: transparent;
+    flex: 0 0 24px;
+}
+
+.author-of-story {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.author-of-story>.material-icons {
+    margin: 0 10px 0 auto;
+    color: var(--font-color);
+    transition: .3s;
+}
+
+
+.users-in-story-list>li>div>.material-icons {
+    margin: 0 10px 0 0;
+    transition: .3s;
+}
+
+.users-in-story-list>li>div>.material-icons:hover,
+.author-of-story>.material-icons:hover {
+    color: rgb(230, 0, 42);
+}
+
+
+
+.user-in-story-img,
+.character-in-story-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.story-characters-header {
+    height: 37px;
+    padding: 8px 0px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+    font-weight: 700;
+}
+
+.characters-in-story-list {
+    height: calc(100% - 37px);
+    padding: 5px;
+    overflow: auto;
+}
+
+@media(min-width: 1000px) {
+    .story-info-wrap {
+        position: relative;
+        flex: 0 0 350px;
+        width: 350px;
+        height: 100%;
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+
+    .characters-in-story-list>li>div:hover {
+        background-color: var(--primary-color-variant-lighter);
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .story-characters-wrap {
+        height: 30%;
+    }
+}
