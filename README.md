@@ -1,2 +1,2 @@
 # Story-React-Django
-React, Redux, Django, Django, Graphene-Django, Channels, GaphQL
+React, Redux, Django, Django, Graphene-Django, Channels, GraphQL
